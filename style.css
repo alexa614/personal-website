@@ -1,0 +1,46 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    /* font-family: 'Courier New', Courier, monospace; */
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808; /* background color */
+    color: #fff; /* text color */
+}
+
+#header { /* needs # because it is an id, not a class */
+    width: 100%;
+    height: 100vh; 
+    background-image: url(background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 10px; 
+}
+
+nav {
+    display: flex; /* moves links next to logo */
+    align-items: center; /* centers links to horizontal center of logo */
+    justify-content: space-between; /* moves link to the right side of screen */
+    flex-wrap: wrap; /* for device size changes maybe */
+}
+
+.logo { /* control logo size*/ 
+    width: 140px; 
+}
+
+nav ul li {
+    display: inline-block; /* makes it so links are in a horizontal row */
+    list-style: none; /* so there's not bullet points next to the links */
+    margin: 10px 20px; /* puts space between the links, 10px top/bottom and 20px left/right */ 
+}
+
+nav ul li a {
+    color: #fff; /* make the links white */ 
+    text-decoration: none; /* remove underline */ 
+    font-size: 20px;
+}
