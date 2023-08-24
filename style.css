@@ -43,4 +43,30 @@ nav ul li a {
     color: #fff; /* make the links white */ 
     text-decoration: none; /* remove underline */ 
     font-size: 20px;
+    position: relative;
+}
+
+nav ul li a::after { /* adds an underline to the navagation bar links */ 
+    content: '';
+    width: 0; /* so its invisible to start, fully visible at 100% */
+    height: 3px; 
+    background: #ff004f;
+    position: absolute; 
+    left: 0; 
+    bottom: -6px; 
+    transition: 0.5s; /* adds underline animation so that is shows up in 0.5 seconds */
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* makes it fully visible */
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 25px; 
+}
+
+.header-text h1 {
+    font-size: 75px;
+    margin-top: 20px;
 }
