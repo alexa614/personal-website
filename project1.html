@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Feed Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <h1 class="sub-title2">News Feed Analysis Website</h1>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen class="video"></iframe>
+    </div>
+    
+    <p class="response"><span class="prompt">Description: <br></span>This Java website takes the url of an RSS file ((LINK yahoo.rss?????) was used in the video), parses it for article information (including title, date, source, and link). Then the program processes the html file of each news article and isolates the main text of the article. This text is then broken up into sentences and each sentence's sentiment is analyzed using Stanford Core NLP. The sentiment value of each sentence is averaged to get a final overal sentiment of the article, which is displayed on the website. Additionally, to reduce the runtime, I used paralell processing so four threads were running concurrently (so four articles can be processed at once).</p>
+    <p class="response"><span class="prompt">Inspiration: <br></span>I got the idea for this project because I read a lot of negative news articles and I wanted a way to find a happy news story. I made this website because I was tired of reading tons of negative news articles. I wanted to know how positive or negative an article was going to be before reading it. This website does it. </p>
+    <p class="response"><span class="prompt">What I Learned: <br></span>While making this project, I learned a lot about Natural Language Processing and data parsing. I also learned about paralell systems and got better at optimizing code.</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
