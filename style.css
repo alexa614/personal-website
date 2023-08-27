@@ -1,7 +1,7 @@
 * {
     margin: 0; 
     padding: 0; 
-    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
@@ -10,8 +10,8 @@ html {
 }
 
 body {
-    background: #080808; /* background color */
-    color: #fff; /* text color */
+    background: #FFF0F5; /* background color */
+    color: #4A4A4A; /* text color */
 }
 
 #header { /* needs # because it is an id, not a class */
@@ -35,13 +35,17 @@ nav {
     position: fixed; /* make it stay at top of screen while scrolling */
     top: 0;
     width: 100%;
+    height: 12vh;
     z-index: 100;
-    background-color: #ff004f;
+    background-color: #FFF0F5;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   }
 
 .logo { /* control logo size*/ 
-    width: 140px; 
+    font-size: 40px;
+    font-family: 'Alex Brush', cursive;
+    text-decoration: none;
+    color: #4A4A4A;
 }
 
 nav ul li {
@@ -51,7 +55,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff; /* make the links white */ 
+    color: #4A4A4A; /* make the links white */ 
     text-decoration: none; /* remove underline */ 
     font-size: 20px;
     position: relative;
@@ -61,7 +65,7 @@ nav ul li a::after { /* adds an underline to the navagation bar links */
     content: '';
     width: 0; /* so its invisible to start, fully visible at 100% */
     height: 3px; 
-    background: #ff004f;
+    background: #FFA07A;
     position: absolute; 
     left: 0; 
     bottom: -6px; 
@@ -73,18 +77,60 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    margin-top: 20%;
+    margin-top: 10%;
     font-size: 25px; 
 }
 
 .header-text h1 {
+    font-family: 'Alex Brush', cursive;
     font-size: 75px;
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.header-text p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fade-in-out {
+    opacity: 0; 
+    animation: fadeInOutAnimation 2s forwards; /* Apply the animation */
+  }
+  
+  @keyframes fadeInOutAnimation {
+    from {
+      opacity: 0; 
+      margin-top: 10%;
+    }
+    to {
+      opacity: 1; 
+      margin-top: 20%;
+    }
+  }
+
+  .fade-in-out2 {
+    opacity: 0; 
+    animation: fadeInOutAnimation2 2s forwards; /* Apply the animation */
+  }
+  
+  @keyframes fadeInOutAnimation2 {
+    from {
+      opacity: 0; 
+      margin-top: 10px;
+    }
+    to {
+      opacity: 1; 
+      margin-top: 15px;
+    }
+  }
 
 #about {
     padding: 40px 15px; 
-    color: #ababab;
+    color: #2E2E2E;
 }
 
 .row {
@@ -109,7 +155,7 @@ nav ul li a:hover::after {
 .sub-title {
     font-size: 60px;
     font-weight: 600;
-    color: #fff;
+    color: #4A4A4A;
 }
 
 .tab-titles {
@@ -129,7 +175,7 @@ nav ul li a:hover::after {
     content: '';
     width: 0; /* so its invisible to start, fully visible at 100% */
     height: 3px; 
-    background: #ff004f;
+    background: #FFA07A;
     position: absolute; 
     left: 0; 
     bottom: -8px; 
@@ -137,7 +183,7 @@ nav ul li a:hover::after {
 }
 
 .tab-links.active-link::after {
-    width: 50%;
+    width: 100%;
 }
 
 .tab-contents ul li {
@@ -154,7 +200,7 @@ nav ul li a:hover::after {
 }
 
 #projects {
-    padding: 15% 0;
+    padding: 5% 10px;
 }
 
 .project-list {
@@ -180,7 +226,7 @@ nav ul li a:hover::after {
 .layer {
     width: 100%; 
     height: 0; 
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0, 0, 0, 0), #FFA07A);
     border-radius: 10px; 
     position: absolute;
     left: 0; 
@@ -203,7 +249,7 @@ nav ul li a:hover::after {
 
 .layer a {
     margin-top: 20px; 
-    color: #ff004f;
+    color: #FFA07A;
     text-decoration: none;
     font-size: 18px; 
     line-height: 60px; 
@@ -226,16 +272,16 @@ nav ul li a:hover::after {
     display: block; 
     margin: 50px auto; 
     width: fit-content; 
-    border: 1px solid #ff004f;
+    border: 1px solid #FFA07A;
     padding: 14px 50px; 
     border-radius: 6px;
     text-decoration: none; 
-    color: #fff;
+    color: #4A4A4A;
     transition: background 0.5s;  
 }
 
 .btn:hover {
-    background: #ff004f;
+    background: #FFA07A;
 }
 
 nav .fas {
@@ -258,7 +304,7 @@ nav .fas {
         font-size: 25px; 
     }
     nav ul {
-        background: #ff004f;
+        background: #FFA07A;
         position: fixed; 
         top: 0; 
         right: -200px; 
