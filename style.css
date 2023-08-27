@@ -14,6 +14,11 @@ body {
     color: #4A4A4A; /* text color */
 }
 
+a {
+    text-decoration: none;
+    color: #4A4A4A;
+}
+
 #header { /* needs # because it is an id, not a class */
     width: 100%;
     height: 100vh; 
@@ -158,9 +163,26 @@ nav ul li a:hover::after {
     color: #4A4A4A;
 }
 
+.sub-title2 {
+    font-size: 60px;
+    font-weight: 600;
+    color: #4A4A4A;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#projects div p {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5px;
+}
+
 .tab-titles {
     display: flex; /* put them in the same row */
-    margin: 20px 0 40px; 
+    margin: 20px 0 30px; 
 }
 
 .tab-links {
@@ -191,6 +213,17 @@ nav ul li a:hover::after {
     margin: 10px 0;
 }
 
+.tab-contents ul li span {
+    font-size: 13px; 
+    color: #FFA07A;
+}
+
+#education span {
+    color: #FFA07A;
+    font-size: 20px;
+    font-weight: 500;
+}
+
 .tab-contents {
     display: none;
 }
@@ -214,19 +247,17 @@ nav ul li a:hover::after {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    margin: auto 20px;
 }
 
-.project img {
-    width: 100%; 
-    border-radius: 10px; 
-    display: block;
+.project a {
     transition: transform 0.5s;
 }
 
 .layer {
     width: 100%; 
     height: 0; 
-    background: linear-gradient(rgba(0, 0, 0, 0), #FFA07A);
+    background: linear-gradient(rgba(255, 255, 255, 0.5), #FFA07A);
     border-radius: 10px; 
     position: absolute;
     left: 0; 
@@ -247,7 +278,7 @@ nav ul li a:hover::after {
     margin-bottom: 20px; 
 }
 
-.layer a {
+/* .layer a {
     margin-top: 20px; 
     color: #FFA07A;
     text-decoration: none;
@@ -258,26 +289,30 @@ nav ul li a:hover::after {
     height: 60px; 
     border-radius: 50%;
     text-align: center;
-}
+} */
 
-.project:hover img {
+/* .project:hover img {
     transform: scale(1.1);
-}
+} */
 
-.project:hover .layer {
+/* .project:hover .layer {
     height: 100%;
-}
+} */
 
 .btn {
-    display: block; 
-    margin: 50px auto; 
-    width: fit-content; 
-    border: 1px solid #FFA07A;
+    margin: 20px auto; 
+    height: 20vh;
+    border: 2px solid #FFA07A;
     padding: 14px 50px; 
     border-radius: 6px;
     text-decoration: none; 
     color: #4A4A4A;
     transition: background 0.5s;  
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .btn:hover {
@@ -286,6 +321,11 @@ nav ul li a:hover::after {
 
 nav .fas {
     display: none; 
+}
+
+.smaller-btn {
+    width: 40vh;
+    height: 10vh;
 }
 
 @media only screen and (max-width: 600px) {
