@@ -22,7 +22,7 @@ a {
 #header { /* needs # because it is an id, not a class */
     width: 100%;
     height: 100vh; 
-    background-image: url(background.png);
+    /* background-image: url(background.png); */
     background-size: cover;
     background-position: center;
 }
@@ -373,7 +373,7 @@ nav .fas {
 
 @media only screen and (max-width: 600px) {
     #header {
-        background-image: url(phone-background.png);
+        /* background-image: url(phone-background.png); */
     }
     .header-text {
         /* margin-top: 100%; */
